@@ -59,19 +59,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: colors.gray,
-        primary: {
-          ...colors.blue,
-          default: colors.blue['700'],
-        },
-        secondary: {
-          ...colors.yellow,
-          default: colors.yellow['400'],
-        },
-        neutral: {
-          ...colors.neutral,
-          default: colors.neutral['900'],
-        },
+        white: colors.gray[50],
+        succes: 'bg-green-700',
+        error: 'bg-red-600',
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
