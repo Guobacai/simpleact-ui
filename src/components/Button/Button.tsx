@@ -101,23 +101,23 @@ export function Button({
 }: ButtonProps) {
   const buttonClass = disabled
     ? clsx(
-        className,
-        baseStyles,
-        variantStyles[variant],
-        shapeStyles[shape],
-        sizeStyles[size],
-        typeStyles[emphasis][action],
-        disabledStyles
-      )
+      className,
+      baseStyles,
+      variantStyles[variant],
+      shapeStyles[shape],
+      sizeStyles[size],
+      typeStyles[emphasis][action],
+      disabledStyles
+    )
     : clsx(
-        className,
-        baseStyles,
-        variantStyles[variant],
-        shapeStyles[shape],
-        sizeStyles[size],
-        statusStyles[status],
-        typeStyles[emphasis][action]
-      );
+      className,
+      baseStyles,
+      variantStyles[variant],
+      shapeStyles[shape],
+      sizeStyles[size],
+      statusStyles[status],
+      typeStyles[emphasis][action]
+    );
 
   const statusIconClass = clsx({ 'animate-spin': status === 'loading' });
 

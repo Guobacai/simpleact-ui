@@ -11,6 +11,7 @@ import {
   faCircleCheck,
   faExclamation,
   faSpinner,
+  faCheck,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -22,7 +23,8 @@ library.add(
   faPaperPlane,
   faCircleCheck,
   faExclamation,
-  faSpinner
+  faSpinner,
+  faCheck
 );
 
 export const parameters = {
