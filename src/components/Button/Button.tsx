@@ -65,7 +65,7 @@ const typeStyles = {
       'hover:bg-neutral-100 active:bg-neutral-200 focus:outline-1 focus:outline-offset-2 focus:bg-neutral-200',
     info: 'hover:bg-neutral-200 active:bg-neutral-300 focus:outline-1 focus:outline-offset-2 focus:bg-neutral-900 focus:text-neutral-100',
     contrast:
-      'text-white focus:outline-2 focus:outline-offset-2 focus:outline-neutral-900 focus:bg-neutral-50 focus:text-neutral-900',
+      'text-white focus:outline-2 focus:outline-offset-2 focus:outline-neutral-900 focus:bg-neutral-50 focus:text-neutral-900 hover:bg-slate-600 active:bg-slate-400',
     destructive:
       'text-red-600 hover:bg-red-100 active:bg-red-200 focus:outline-1 focus:outline-offset-2 focus:outline-blue-700 focus:border-none focus:bg-red-600 focus:text-neutral-100',
   },
@@ -101,23 +101,23 @@ export function Button({
 }: ButtonProps) {
   const buttonClass = disabled
     ? clsx(
-      className,
-      baseStyles,
-      variantStyles[variant],
-      shapeStyles[shape],
-      sizeStyles[size],
-      typeStyles[emphasis][action],
-      disabledStyles
-    )
+        className,
+        baseStyles,
+        variantStyles[variant],
+        shapeStyles[shape],
+        sizeStyles[size],
+        typeStyles[emphasis][action],
+        disabledStyles
+      )
     : clsx(
-      className,
-      baseStyles,
-      variantStyles[variant],
-      shapeStyles[shape],
-      sizeStyles[size],
-      statusStyles[status],
-      typeStyles[emphasis][action]
-    );
+        className,
+        baseStyles,
+        variantStyles[variant],
+        shapeStyles[shape],
+        sizeStyles[size],
+        statusStyles[status],
+        typeStyles[emphasis][action]
+      );
 
   const statusIconClass = clsx({ 'animate-spin': status === 'loading' });
 

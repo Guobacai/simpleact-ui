@@ -58,6 +58,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      transitionProperty: {
+        'max-height': 'max-height',
+      },
       colors: {
         white: colors.gray[50],
         succes: 'bg-green-700',
