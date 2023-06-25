@@ -1,16 +1,17 @@
 import React, { ReactNode } from 'react';
-import { IconName } from '@fortawesome/fontawesome-svg-core';
+import { IconProp, IconName } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import clsx from 'clsx';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'basic' | 'icon' | 'leadingIcon' | 'trailingIcon';
   action?: 'primary' | 'secondary' | 'info' | 'contrast' | 'destructive';
   size?: 'sm' | 'md' | 'lg' | 'xl';
   emphasis?: 'bold' | 'subtle' | 'minimal';
   shape?: 'square' | 'circle';
   status?: 'enabled' | 'loading' | 'success' | 'error';
-  icon?: IconName;
+  icon?: IconProp;
   children?: ReactNode;
 }
 
@@ -128,7 +129,7 @@ export function Button({
       ) : (
         <>
           {variant === 'leadingIcon' && (
-            <FontAwesomeIcon icon={['fas', icon]}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={icon}></FontAwesomeIcon>
           )}
           {status == 'enabled' ? (
             children
@@ -139,7 +140,7 @@ export function Button({
             ></FontAwesomeIcon>
           )}
           {variant === 'trailingIcon' && (
-            <FontAwesomeIcon icon={['fas', icon]}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={icon}></FontAwesomeIcon>
           )}
         </>
       )}
