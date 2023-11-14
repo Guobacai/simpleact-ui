@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonGroup from '../ButtonGroup';
+import { ButtonGroup } from '../ButtonGroup';
 import { ButtonProps } from '../../Button';
 import { Meta } from '@storybook/react';
 

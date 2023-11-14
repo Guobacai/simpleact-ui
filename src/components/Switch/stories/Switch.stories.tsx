@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Switch from '../Switch';
+import { Switch } from '../Switch';
 
 export default {
   title: 'Components/Switch',

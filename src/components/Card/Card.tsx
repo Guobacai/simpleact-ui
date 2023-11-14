@@ -13,7 +13,7 @@ interface CardProp {
   size?: 'lg' | 'md' | 'sm';
 }
 
-const Card = ({
+export const Card = ({
   children,
   title,
   subTitle,
@@ -73,5 +73,3 @@ const Card = ({
     </div>
   );
 };
-
-export default Card;

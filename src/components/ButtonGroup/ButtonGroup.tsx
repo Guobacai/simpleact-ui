@@ -15,7 +15,7 @@ const sizes = {
   lg: 'text-lg',
 };
 
-const ButtonGroup = ({
+export const ButtonGroup = ({
   buttons,
   variations = 'basic',
   orientation = 'horizontal',
@@ -39,5 +39,3 @@ const ButtonGroup = ({
   });
   return <div className={groupContainerClass}>{buttonList}</div>;
 };
-
-export default ButtonGroup;

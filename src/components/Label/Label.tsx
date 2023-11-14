@@ -7,7 +7,7 @@ interface LabelProp {
   children: ReactNode;
 }
 
-const Label = ({ disabled, size = 'md', children }: LabelProp) => {
+export const Label = ({ disabled, size = 'md', children }: LabelProp) => {
   const labelClasses = clsx('', {
     'text-neutral-300': disabled,
     'text-sm': size === 'sm',
@@ -17,5 +17,3 @@ const Label = ({ disabled, size = 'md', children }: LabelProp) => {
 
   return <label className={labelClasses}>{children}</label>;
 };
-
-export default Label;

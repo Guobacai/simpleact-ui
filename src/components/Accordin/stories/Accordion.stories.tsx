@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Accordion from '../Accordion';
+import { Accordion } from '../Accordion';
 import { Button } from '../../Button';
 
 export default {

@@ -23,7 +23,7 @@ interface BreadcrumbsProps {
   size?: 'sm' | 'md' | 'lg';
 }
 
-const Breadcrumb = ({
+export const Breadcrumb = ({
   breadcrumbs,
   truncateItems = false,
   truncateText = 12,
@@ -104,5 +104,3 @@ const Breadcrumb = ({
     </ul>
   );
 };
-
-export default Breadcrumb;

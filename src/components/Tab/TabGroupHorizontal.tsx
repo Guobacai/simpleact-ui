@@ -20,7 +20,7 @@ export interface TabGroupHorizontalProps {
 
 const baseHeaderClass = 'flex flex-row gap-8';
 
-const TabGroupHorizontal = ({
+export const TabGroupHorizontal = ({
   tabs,
   alignment = 'left',
   onClickTab,
@@ -116,5 +116,3 @@ const TabGroupHorizontal = ({
     </div>
   );
 };
-
-export default TabGroupHorizontal;

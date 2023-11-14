@@ -18,7 +18,7 @@ interface AccordinProps {
   multiple?: boolean;
 }
 
-const Accordion = ({
+export const Accordion = ({
   items,
   typeStyle = 'product',
   emphasis = 'subtle',
@@ -112,5 +112,3 @@ const Accordion = ({
 
   return <ul className="w-full">{itemsDom}</ul>;
 };
-
-export default Accordion;

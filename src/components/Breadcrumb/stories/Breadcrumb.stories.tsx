@@ -1,5 +1,5 @@
 import React from 'react';
-import Breadcrumb, { BreadcrumbProp } from '../Breadcrumb';
+import { Breadcrumb, BreadcrumbProp } from '../Breadcrumb';
 
 const TabsStories = {
   title: 'Components/Breadcrumb',

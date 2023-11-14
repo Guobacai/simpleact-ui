@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import TopNavigation from '../TopNavigation';
+import { TopNavigation } from '../TopNavigation';
 
 export default {
   title: 'Modules/TopNavigation',

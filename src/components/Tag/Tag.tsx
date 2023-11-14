@@ -123,7 +123,7 @@ const baseClass = 'inline-flex gap-2 border rounded-full items-center';
 
 const toggleTagBaseClass = 'bg-neutral-200 text-neutral-600';
 
-const Tag = ({
+export const Tag = ({
   children,
   className,
   type = 'display',
@@ -169,5 +169,3 @@ const Tag = ({
     </div>
   );
 };
-
-export default Tag;

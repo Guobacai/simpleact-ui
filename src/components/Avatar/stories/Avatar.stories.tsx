@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Avatar from '../Avatar';
+import { Avatar } from '../Avatar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import avatarPng from '/assets/man-avatar.png';
 import avatarPng24 from '/assets/man-avatar-24.png';

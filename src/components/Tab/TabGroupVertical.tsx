@@ -12,7 +12,7 @@ export interface TabGroupVerticalProps {
   tabs: [TabProps];
 }
 
-const TabGroupVertical = ({ tabs }: TabGroupVerticalProps) => {
+export const TabGroupVertical = ({ tabs }: TabGroupVerticalProps) => {
   const tabsHead = tabs.map((tab, index) => {
     const tabContainerClass = clsx(tabContainerBaseClasses, {
       'border-slate-200': !tab.isSelected,
@@ -42,5 +42,3 @@ const TabGroupVertical = ({ tabs }: TabGroupVerticalProps) => {
     </div>
   );
 };
-
-export default TabGroupVertical;

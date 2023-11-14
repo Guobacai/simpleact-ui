@@ -70,7 +70,7 @@ const statusMapping = {
   info: 'blue',
 };
 
-const Avatar = ({
+export const Avatar = ({
   children,
   size = 'md',
   shape = 'circle',
@@ -89,5 +89,3 @@ const Avatar = ({
   );
   return <div className={containerClasses}>{children}</div>;
 };
-
-export default Avatar;

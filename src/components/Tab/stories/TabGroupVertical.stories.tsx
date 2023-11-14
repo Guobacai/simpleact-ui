@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import TabGroupVertical from '../TabGroupVertical';
+import { TabGroupVertical } from '../TabGroupVertical';
 
 export default {
   title: 'Components/Tab',

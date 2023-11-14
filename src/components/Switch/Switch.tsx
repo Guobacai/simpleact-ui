@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import Label from '../Label/Label';
+import { Label } from '../Label/Label';
 
 interface SwitchProp {
   label: string;
@@ -11,7 +11,7 @@ interface SwitchProp {
   orientation?: 'left' | 'right';
 }
 
-const Switch = ({
+export const Switch = ({
   label,
   active = false,
   disabled = false,
@@ -65,5 +65,3 @@ const Switch = ({
     </div>
   );
 };
-
-export default Switch;

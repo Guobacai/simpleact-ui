@@ -8,7 +8,7 @@ interface TopNavigationProps {
   logoAlt?: string;
 }
 
-const TopNavigation = ({ items, logo, logoAlt }: TopNavigationProps) => {
+export const TopNavigation = ({ items, logo, logoAlt }: TopNavigationProps) => {
   return (
     <div className="flex sm:max-xl:justify-between h-full px-3 bg-blue-400 text-white">
       <div className="flex items-center sm:max-xl:order-2 xl:order-1">
@@ -28,5 +28,3 @@ const TopNavigation = ({ items, logo, logoAlt }: TopNavigationProps) => {
     </div>
   );
 };
-
-export default TopNavigation;
