@@ -8,3 +8,5 @@ export * from './Tab/TabGroupHorizontal';
 export * from './Tag/Tag';
 export * from './Card/Card';
 export * from './Label/Label';
+export * from './Input/Input';
+export * from './Input/InputPassword';
