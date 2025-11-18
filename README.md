@@ -1,7 +1,9 @@
 # Simpleact UI
 
-This is a library of UI components which are based on [Goldman Sachs Design](https://design.gs.com/home).
-It is built based on the storybook and a few other dependencies. It will try to keep the dependencies as minimal as possible.
+This is a library of UI components which are based on
+[Goldman Sachs Design](https://design.gs.com/home). It is built based on the
+storybook and a few other dependencies. It will try to keep the dependencies as
+minimal as possible.
 
 ## Screenshot
 
@@ -11,4 +13,18 @@ It is built based on the storybook and a few other dependencies. It will try to 
 
 ```sh
 npm run storybook
+```
+
+## Build the package.
+
+```sh
+npm run build
+```
+
+## Include the styles.
+
+In the top css file, add the following line.
+
+```css
+@import 'simpleact-ui/css';
 ```

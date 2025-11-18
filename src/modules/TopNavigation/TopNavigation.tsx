@@ -24,7 +24,9 @@ export const TopNavigation = ({ items, logo, logoAlt }: TopNavigationProps) => {
           <TopNavigationDropdown items={items}></TopNavigationDropdown>
         </div>
       </div>
-      <div className="flex items-center sm:max-xl:order-3 xl:order-3"></div>
+      <div className="flex items-center sm:max-xl:order-3 xl:order-3">
+        Log In
+      </div>
     </div>
   );
 };

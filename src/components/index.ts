@@ -9,4 +9,5 @@ export * from './Tag/Tag';
 export * from './Card/Card';
 export * from './Label/Label';
 export * from './Input/Input';
+export * from './Switch/Switch';
 export * from './Input/InputPassword';
