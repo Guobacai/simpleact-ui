@@ -52,6 +52,7 @@ export const Input = ({
   status,
   readonly = false,
   clearable = false,
+  name,
   handleClickClearBtn = noop,
   handleClickTailingIcon = noop,
 }: InputProps) => {
@@ -140,6 +141,7 @@ export const Input = ({
         )}
         <input
           type={type}
+          name={name}
           className={inputClasses}
           onFocus={() => {
             setIsFocus(true);
